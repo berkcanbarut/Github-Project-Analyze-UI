@@ -1,0 +1,94 @@
+.user-info {
+  background-color: #112B3C;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100vh;
+
+}
+.user-info .avatar{
+  border-radius: 20px;
+}
+.user-info .info-details{
+  margin-top: 20px;
+}
+.project-list {
+  background-color: #92A9BD;
+  color: #383838;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 0px;
+}
+.project-list .project {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.project-list .project a {
+  color: #383838;
+  text-decoration: none;
+  font-size: 20px;
+}
+.project-list .project a:hover{
+  color: #666;
+}
+
+.project-list .project .project-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.App .login-btn{
+  color: white;
+  text-decoration: none;
+  background-color: #383838;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.App .login-btn:hover{
+  color: #eee;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Blue */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
